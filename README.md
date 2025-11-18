@@ -1,46 +1,14 @@
-# Astro Starter Kit: Basics
+# Landing Page: Build with Astro
 
-```sh
-bun create astro@latest -- --template basics
-```
+I love the flavor of the mead with my launcher to the moon 🚀
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+I highly recommend using, or at least integrating, a project built with Astro, and if it's much more complex, even better than a landing page built with Astro.
 
-## 🚀 Project Structure
+If you have time you could see this other videos creating Apps with Astro, from @midudev:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [Desarrollando Sitio web OFICIAL de BIG IBAI 2025 DESDE CERO con Astro, TypeScript, Supabase](https://www.youtube.com/watch?v=GGuvEH16rXU)
+- [Creando BASE de DATOS con Astro DB y BACKEND para la Web de la Velada del Año](https://www.youtube.com/watch?v=Lr5TRr4iQ7Y)
+- [Curso WordPress Headless 2025: Guía Completa para Integrar WP con Frameworks JavaScript](https://www.youtube.com/watch?v=145_QaxIy5I)
+- [Agrega Autenticación en tu app de Astro y Next.js con Clerk](https://www.youtube.com/watch?v=dsw3JePcA_0)
+- [Desarrollando Sitio web OFICIAL de LA VELADA DEL AÑO 5 DESDE CERO](https://www.youtube.com/watch?v=bODuOok1xr8)
+- [Creando sitio web OFICIAL de LOLA LOLITA desde CERO](https://www.youtube.com/watch?v=glW-7qbeI4s)
