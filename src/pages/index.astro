@@ -1,23 +1,35 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/layout/Header.astro';
-import Footer from '../components/layout/Footer.astro';
-import Hero from '../components/pages/home/Hero.astro';
-import Button from '../components/ui/Button.astro';
-import CallToAction from '../components/pages/index/CallToAction.astro';
-import InfoSection from '../components/pages/index/InfoSection.astro';
-import QuoteSection from '../components/pages/index/QuoteSection.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
+import Hero from "../components/pages/home/Hero.astro";
+import Button from "../components/ui/Button.astro";
+import CallToAction from "../components/pages/home/CallToAction.astro";
+import InfoSection from "../components/pages/home/InfoSection.astro";
+import QuoteSection from "../components/pages/home/QuoteSection.astro";
+import Card from "../components/pages/home/Card.astro";
 ---
 
 <BaseLayout>
-    <Header>
-        <Hero slot="hero-slot">
-            <Button slot="hero-sign-up-button" content="Sign up"/>
-        </Hero>
-    </Header>
-    
-    <div class="container">
+  <Header>
+    <Hero slot="hero-slot">
+      <Button slot="hero-sign-up-button" content="Sign up" />
+    </Hero>
+  </Header>
 
-    </div>
-    <Footer/>
+  <div class="container">
+    <InfoSection>
+      <Card slot="section-card-first" />
+      <Card slot="section-card-second" />
+      <Card slot="section-card-third" />
+      <Card slot="section-card-fourth" />
+      <InfoSection />
+    </InfoSection>
+    <QuoteSection />
+    <CallToAction>
+      <Button slot="action-button" content="Sign up" />
+      <CallToAction />
+    </CallToAction>
+  </div>
+  <Footer />
 </BaseLayout>

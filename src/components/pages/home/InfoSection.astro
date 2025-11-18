@@ -1,0 +1,32 @@
+<div id="info-section-container">
+    <div id="info-section-title">
+        Some random information.    
+    </div>
+    <div id="info-section-content">
+        <slot name="section-card-first"/>
+        <slot name="section-card-second"/>
+        <slot name="section-card-third"/>
+        <slot name="section-card-fourth"/>
+    </div>
+</div>
+
+<style>
+
+    #info-section-container{
+        margin-block: 4em;
+    }
+
+    #info-section-title{
+        text-align: center;
+        font-size: var(--info-title-size);
+        font-weight: bolder;
+        color: var(--color-dark);
+    }
+    
+    #info-section-content{
+        display: flex;
+        justify-content: center;
+        margin-block-start: 2em;
+        gap: 5em;
+    }
+</style>

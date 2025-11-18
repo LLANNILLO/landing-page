@@ -1,0 +1,42 @@
+<div id="call-to-action-container">
+  <div id="call-to-action-content">
+    <div id="action-text-content">
+      <div id="action-title">Call to action! It's time!</div>
+      <div id="action-text">
+        Sign up for our product by clicking that button right over there!
+      </div>
+    </div>
+    <div id="action-button-content">
+      <slot name="action-button" />
+    </div>
+  </div>
+</div>
+
+<style>
+  #call-to-action-container {
+    margin-block: 6em;
+    color: var(--color-light);
+  }
+  #call-to-action-content {
+    margin-inline: 300px;
+    padding-inline: 5.5rem;
+    padding-block: 2.75rem;
+    background-color: var(--color-accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.75rem;
+  }
+
+  #action-title {
+    font-size: var(--logo-size);
+    font-weight: 500;
+  }
+  #action-text {
+    color: var(--color-secondary);
+  }
+  #action-button-content {
+    border: 2px solid var(--color-light);
+    border-radius: 0.75rem;
+  }
+</style>
