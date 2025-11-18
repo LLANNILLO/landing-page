@@ -1,0 +1,50 @@
+<div id="hero-container">
+    <div id="hero-content">
+        <div id="hero-content-title">This website Is Awesome</div>
+        <div id="hero-content-subtitle">
+            This website has some subtext that goes here under
+            the main title. It's a smaller and the color is lower contrast
+        </div>
+        <slot name="hero-sign-up-button"/>
+    </div>
+    <div id="hero-image">
+        <!-- <picture>
+            <img src="" alt="">
+        </picture> -->
+        this is a placeholder for an image
+    </div>
+</div>
+
+<style>
+    #hero-container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        gap: 12em;
+    }
+
+    #hero-content-title{
+        font-size: var(--hero-title-size);
+        color: var(--color-light);
+        font-weight: bold;
+    }
+    
+    #hero-content-subtitle{
+        font-size: var(--hero-text-size);
+        color: var(--color-secondary);
+        text-wrap: wrap;
+        max-width:500px;
+        text-align: justify;
+        margin-block: .5em;
+        margin-block-end: 1rem;
+    }
+
+    #hero-image{
+        width: 1200px;
+        display: flex;
+        font-size: var(--hero-title-size);
+        justify-content: center;
+        align-items: center;
+        background-color: azure;
+    }
+</style>
