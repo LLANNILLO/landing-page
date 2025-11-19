@@ -8,6 +8,11 @@ import CallToAction from "../components/pages/home/CallToAction.astro";
 import InfoSection from "../components/pages/home/InfoSection.astro";
 import QuoteSection from "../components/pages/home/QuoteSection.astro";
 import Card from "../components/pages/home/Card.astro";
+
+import bloodImage from '../images/blood.jpg'
+import travelImage from '../images/travel.jpg'
+import historyImage from '../images/history.jpg'
+import paradiseImage from '../images/paradise.jpg'
 ---
 
 <BaseLayout>
@@ -19,10 +24,11 @@ import Card from "../components/pages/home/Card.astro";
 
   <div class="container">
     <InfoSection>
-      <Card slot="section-card-first" />
-      <Card slot="section-card-second" />
-      <Card slot="section-card-third" />
-      <Card slot="section-card-fourth" />
+      <Card cardImage={bloodImage} cardText="We frighten our enemies" slot="section-card-first" />
+      <Card cardImage={travelImage} cardText="We travel around the world" slot="section-card-second" />
+      <Card cardImage={historyImage} cardText="We have a great history upon our shoulders" slot="section-card-third" />
+      <Card cardImage={paradiseImage} cardText="We live in the most beautiful land on earth" slot="section-card-third" />
+      
       <InfoSection />
     </InfoSection>
     <QuoteSection />

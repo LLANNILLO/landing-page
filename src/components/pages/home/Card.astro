@@ -1,31 +1,45 @@
+---
+import { Image } from "astro:assets";
+const { cardImage, cardText } = Astro.props;
+---
+
 <div class="card-container">
-    <div class="card-image">
-        CARD IMAGE
-    </div>
-    <div class="card-text">
-        this is some subtext under an illustration or image
-    </div>
+  <div id="card-image-container">
+    <Image
+      src={cardImage}
+      alt="card-image-one"
+      width={150}
+    />
+  </div>
+  <div class="card-text">
+    {cardText}
+  </div>
 </div>
 
 <style>
-    .card-container{
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-        width: 150px;
-        color: var(--color-dark);
-    }
+  #card-image-container {
+    border: 0.275rem solid var(--color-accent);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    height: 225px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 150px;
+    color: var(--color-dark);
+  }
 
-    .card-image{
-        border: .275rem solid var(--color-accent);
-        border-radius: 0.75rem;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .card-image {
+    border: 0.275rem solid var(--color-accent);
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .card-text{
-        text-align: center;
-    }
+  .card-text {
+    text-align: center;
+  }
 </style>

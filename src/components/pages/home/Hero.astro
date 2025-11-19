@@ -1,50 +1,45 @@
+---
+import { Image } from "astro:assets";
+import heroImage from "../../../images/hero_viking.jpg";
+---
+
 <div id="hero-container">
-    <div id="hero-content">
-        <div id="hero-content-title">This website Is Awesome</div>
-        <div id="hero-content-subtitle">
-            This website has some subtext that goes here under
-            the main title. It's a smaller and the color is lower contrast
-        </div>
-        <slot name="hero-sign-up-button"/>
+  <div id="hero-content">
+    <div id="hero-content-title">This website Is About Vikings</div>
+    <div id="hero-content-subtitle">
+      This website has some subtext that goes here under the main title. It's a
+      smaller and the color is lower contrast
     </div>
-    <div id="hero-image">
-        <!-- <picture>
-            <img src="" alt="">
-        </picture> -->
-        this is a placeholder for an image
-    </div>
+    <slot name="hero-sign-up-button" />
+  </div>
+
+  <Image src={heroImage} alt="Hero image" height={400} densities={[1.5, 2]} />
 </div>
 
 <style>
-    #hero-container{
-        display: flex;
-        flex-direction: row;
-        margin-top: 100px;
-        gap: 12em;
-    }
+  #hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 12em;
+  }
 
-    #hero-content-title{
-        font-size: var(--hero-title-size);
-        color: var(--color-light);
-        font-weight: bold;
-    }
-    
-    #hero-content-subtitle{
-        font-size: var(--hero-text-size);
-        color: var(--color-secondary);
-        text-wrap: wrap;
-        max-width:500px;
-        text-align: justify;
-        margin-block: .5em;
-        margin-block-end: 1rem;
-    }
+  #hero-content-title {
+    font-size: var(--hero-title-size);
+    color: var(--color-light);
+    font-weight: bold;
+  }
 
-    #hero-image{
-        width: 1200px;
-        display: flex;
-        font-size: var(--hero-title-size);
-        justify-content: center;
-        align-items: center;
-        background-color: azure;
-    }
+  #hero-content-subtitle {
+    font-size: var(--hero-text-size);
+    color: var(--color-secondary);
+    text-wrap: wrap;
+    max-width: 500px;
+    text-align: justify;
+    margin-block: 0.5em;
+    margin-block-end: 1rem;
+  }
+
+  Image
 </style>
